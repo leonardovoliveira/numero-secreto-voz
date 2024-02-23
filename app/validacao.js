@@ -9,6 +9,7 @@ function verificaSeOChutePossuiUmValorValido(chute){
                 <button id="jogar-novamente" class="btn-jogar">Jogar novamente</button>
             `
             document.body.style.backgroundColor = "black";
+            recognition.addEventListener('end', () => recognition.stop())
         } else {
             elementoChute.innerHTML += `<div>Numero invalido</div>`
         }
